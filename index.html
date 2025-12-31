@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Meta description for SEO -->
+  <meta name="description" content="Small Doctor Website" />
+  <title>Small Doctor</title>
+  <!-- Main Sass CSS file -->
+  <link rel="stylesheet" href="main.css" />
+  <!-- Source map for Sass (optional, for debugging) -->
+  <link rel="stylesheet" href="main.css.map" />
+  <!-- Favicon for browser tab -->
+  <link rel="icon" type="image/x-icon" href="images/favicon.png" />
+  <!-- Main Template CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Normalize CSS to render all elements consistently across browsers -->
+  <link rel="stylesheet" href="normalize.css" />
+  <!-- Font Awesome Library for icons -->
+  <link rel="stylesheet" href="all.min.css" />
+  <!-- Bootstrap CSS framework -->
+  <link rel="stylesheet" href="bootstrap.css" />
+  <!-- Google Fonts: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&#038;display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <div id="logo">
+        <img src="images/logo.png" alt="شعار الطبيب الصغير" />
+      </div>
+      <ul>
+        <!-- زر الطوارئ -->
+        <li>
+          <button class="btn-animated emergency-btn">
+            <i class="fas fa-plus-circle"></i> طورئ
+          </button>
+        </li>
+
+
+
+
+        <!-- الدعم النفسي -->
+        <li class="has-mega-menu">
+          <a href="#psychological-support">الدعم النفسي <i class="fas fa-angle-down"></i></a>
+          <div class="mega-menu">
+            <a href="#psychological-support"><i class="fas fa-smile"></i> مساحة فضفضة ودعم نفسي</a>
+            <a href="#psychological-support"><i class="fas fa-peace"></i> تمارين استرخاء بسيطة</a>
+            <a href="#psychological-support"><i class="fas fa-lungs"></i> تمارين تنفس وفيديوهات استرخاء</a>
+            <a href="#psychological-support"><i class="fas fa-spa"></i> مساج بسيط</a>
+            <a href="#psychological-support"><i class="fas fa-microphone"></i> مساعد صوتي ذكي</a>
+          </div>
+        </li>
+
+        <!-- الاختبارات -->
+        <li class="has-mega-menu">
+          <a href="#hearing-test">الاختبارات <i class="fas fa-angle-down"></i></a>
+          <div class="mega-menu">
+            <a href="#hearing-test"><i class="fas fa-assistive-listening-systems"></i> اختبار السمع التفاعلي</a>
+            <a href="#"><i class="fas fa-eye"></i> اختبار النظر التفاعلي</a>
+            <a href="#"><i class="fas fa-running"></i> اختبار سرعة رد الفعل</a>
+            <a href="#12"><i class="fas fa-heartbeat"></i> قياس نبض القلب بالكاميرا</a>
+          </div>
+        </li>
+        <!-- الأساسيات -->
+        <li class="has-mega-menu">
+          <a href="#symptoms-checker">الأساسيات <i class="fas fa-angle-down"></i></a>
+          <div class="mega-menu">
+            <a href="#symptoms-checker"><i class="fas fa-diagnoses"></i> تشخيص مبدئي للأعراض</a>
+            <a href="#symptoms-checker"><i class="fas fa-pills"></i> اقتراح الدواء المناسب</a>
+            <a href="#"><i class="fas fa-question-circle"></i> أسئلة شائعة مبسطة</a>
+            <a href="#health-tracker"><i class="fas fa-calendar-check"></i> تذكير بمواعيد الدواء</a>
+            <a href="#health-tracker"><i class="fas fa-chart-line"></i> متابعة الحالة الصحية اليومية</a>
+            <a href="#"><i class="fas fa-notes-medical"></i> متابعة الأدوية</a>
+            <a href="#bmi-calculator"><i class="fas fa-weight"></i> حساب مؤشر كتلة الجسم (BMI)</a>
+            <a href="#"><i class="fas fa-trophy"></i> تحدي نفسك</a>
+          </div>
+        </li>
+
+        <li><a href="#about"> من نحن</a></li>
+        <li><a href="#"></i> الرئيسية</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Slider -->
+  <section id="hero">
+    <div class="hero-slider">
+      <!-- Slide 1 -->
+      <div class="hero-slide active slide-1">
+        <div class="hero-content">
+          <h1>مرحبًا بكم في موقع الطبيب الصغير</h1>
+          <p>
+            محتوى صحي مبسط يساعد الأطفال على فهم أساسيات الصحة بطريقة ممتعة.
+          </p>
+          <a href="#about" class="btn-animated">ابدأ الآن</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="hero-slide slide-2">
+        <div class="hero-content">
+          <h1>اختبارات طبيه هامه </h1>
+          <p>
+        اختبارات طبيه هامه مل السمع والبصر والقلب وسرعة رد الفع
+          </p>
+          <a href="#12" class="btn-animated">جرب الآن</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="hero-slide slide-3">
+        <div class="hero-content">
+          <h1>دعم نفسي متقدم</h1>
+          <p>جرب الان الدعم النفسي الخاص في موقع الطبيب الصغير والذي هو معك في كل المواقف الطارقة</p>
+          <a href="#psychological-support" class="btn-animated">جرب الان</a>
+        </div>
+      </div>
+
+
+    <!-- Controls -->
+    <div class="hero-controls">
+      <span class="control active" onclick="showSlide(0)"></span>
+      <span class="control" onclick="showSlide(1)"></span>
+      <span class="control" onclick="showSlide(2)"></span>
+      <span class="control" onclick="showSlide(3)"></span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-text">
+        <h2 style="
+              font-size: 2.8rem;
+              margin-bottom: 10px;
+              position: relative;
+              display: inline-block;
+              text-align: center;
+              right: 100%;
+              top: 100%;
+              margin-bottom: 12%;
+            ">
+          من نحن
+          <span style="
+                display: block;
+                width: 80px;
+                height: 3px;
+                background: rgb(77 184 255);
+                margin: 15px auto 0;
+              "></span>
+        </h2>
+        <p class="about-text">
+          موقع <strong>Small Doctor ✨</strong> دليلك الصحي الذكي، يقدّم
+          تشخيصًا مبدئيًا للأعراض، اقتراح الدواء مع تنبيه لاستشارة الطبيب،
+          نصائح وأسئلة شائعة مبسطة، تذكير بالأدوية والعادات الصحية، إسعافات
+          أولية بالصور والفيديو، اختبارات سمع ونظر وتفاعل، دعم نفسي وتمارين
+          استرخاء، مساعد صوتي بالذكاء الاصطناعي، متابعة ضغط وسكر ووزن، حساب
+          BMI، وضع طوارئ فوري، قياس نبض بالكاميرا، وقسم "تحدي نفسك" لتحقيق
+          أهدافك الصحية اليومية.
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="images/about.avif" alt="فريق الطبيب الصغير" />
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم تشخيص الأعراض واقتراح الدواء -->
+  <section id="symptoms-checker" class="section">
+    <h2 class="section-title">تشخيص مبدئي للأعراض</h2>
+
+    <div class="feature-card">
+      <div class="warning">
+        <i class="fas fa-exclamation-triangle"></i>
+        <strong>تنبيه هام:</strong> هذا التشخيص أولي ولا يغني عن استشارة الطبيب المتخصص
+      </div>
+
+      <form id="symptoms-form">
+        <div class="form-group">
+          <label for="symptoms">ما هي الأعراض التي تشعر بها؟</label>
+          <textarea class="form-control" id="symptoms" rows="4" placeholder="صف أعراضك بالتفصيل..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="duration">منذ متى وأنت تشعر بهذه الأعراض؟</label>
+          <select class="form-control" id="duration">
+            <option value="">-- اختر المدة --</option>
+            <option value="less-than-day">أقل من يوم</option>
+            <option value="1-3-days">من 1 إلى 3 أيام</option>
+            <option value="4-7-days">من 4 إلى 7 أيام</option>
+            <option value="more-than-week">أكثر من أسبوع</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="severity">ما هي شدة الأعراض؟</label>
+          <select class="form-control" id="severity">
+            <option value="">-- اختر الشدة --</option>
+            <option value="mild">خفيفة (لا تؤثر على الأنشطة اليومية)</option>
+            <option value="moderate">متوسطة (تؤثر قليلاً على الأنشطة)</option>
+            <option value="severe">شديدة (تعيق ممارسة الأنشطة اليومية)</option>
+          </select>
+        </div>
+
+        <button type="button" class="btn-primary" onclick="checkSymptoms()">
+          <i class="fas fa-stethoscope"></i> تحليل الأعراض
+        </button>
+      </form>
+
+      <div id="symptoms-result" class="result-box" style="display: none;">
+        <h3><i class="fas fa-info-circle"></i> النتيجة الأولية</h3>
+        <p id="diagnosis-text"></p>
+        <div id="medicine-suggestion" style="margin-top: 15px;"></div>
+        <div class="warning" style="margin-top: 15px;">
+          <i class="fas fa-hand-point-right"></i>
+          <strong>نصيحة:</strong> ننصحك بزيارة الطبيب للتأكد من التشخيص والحصول على العلاج المناسب
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم المتابعة الصحية اليومية -->
+  <section id="health-tracker" class="section" style="background: #f9fafc;">
+    <h2 class="section-title">متابعة الحالة الصحية اليومية</h2>
+
+    <div class="feature-card">
+      <form id="health-tracker-form">
+        <div class="form-group">
+          <label for="blood-pressure">ضغط الدم (مثال: 80/120)</label>
+          <input type="text" class="form-control" id="blood-pressure" placeholder="ادخل قراءة ضغط الدم">
+        </div>
+
+        <div class="form-group">
+          <label for="blood-sugar">مستوى السكر في الدم (مجم/ديسيلتر)</label>
+          <input type="number" class="form-control" id="blood-sugar" placeholder="ادخل مستوى السكر">
+        </div>
+
+        <div class="form-group">
+          <label for="weight">الوزن (كجم)</label>
+          <input type="number" class="form-control" id="weight" placeholder="ادخل وزنك">
+        </div>
+
+        <div class="form-group">
+          <label for="track-date">تاريخ القياس</label>
+          <input type="date" class="form-control" id="track-date">
+        </div>
+
+        <button type="button" class="btn-primary" onclick="saveHealthData()">
+          <i class="fas fa-save"></i> حفظ البيانات
+        </button>
+      </form>
+
+      <div id="health-history" style="margin-top: 30px;">
+        <h3><i class="fas fa-history"></i> السجل الصحي</h3>
+        <div id="health-data-container">
+          <p style="color: #6c757d;">لا توجد بيانات مسجلة بعد</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم اختبار السمع التفاعلي -->
+  <section id="hearing-test" class="section">
+    <h2 class="section-title">اختبار السمع التفاعلي</h2>
+
+    <div class="feature-card">
+      <p>اختبر مدى حساسية سمعك من خلال النقر على الأزرار أدناه. تأكد من رفع الصوت لديك.</p>
+
+      <div class="audio-test">
+        <button class="frequency-btn" onclick="playSound(250)">250 هرتز (منخفض)</button>
+        <button class="frequency-btn" onclick="playSound(1000)">1000 هرتز (متوسط)</button>
+        <button class="frequency-btn" onclick="playSound(4000)">4000 هرتز (مرتفع)</button>
+        <button class="frequency-btn" onclick="playSound(8000)">8000 هرتز (مرتفع جداً)</button>
+      </div>
+
+      <div class="form-group" style="margin-top: 30px;">
+        <label>ما هي الترددات التي تسمعها بوضوح؟</label>
+        <div>
+          <label><input type="checkbox" id="freq-250"> 250 هرتز</label>
+          <label><input type="checkbox" id="freq-1000"> 1000 هرتز</label>
+          <label><input type="checkbox" id="freq-4000"> 4000 هرتز</label>
+          <label><input type="checkbox" id="freq-8000"> 8000 هرتز</label>
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" onclick="evaluateHearing()">
+        <i class="fas fa-assistive-listening-systems"></i> تقييم السمع
+      </button>
+
+      <div id="hearing-result" class="result-box" style="display: none; margin-top: 20px;">
+        <h3><i class="fas fa-audio-description"></i> نتيجة اختبار السمع</h3>
+        <p id="hearing-assessment"></p>
+        <div class="warning">
+          <i class="fas fa-info-circle"></i>
+          هذا اختبار أولي ولا يغني عن الفحص الطبي المتخصص لدى أخصائي الأنف والأذن والحنجرة
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- قسم الدعم النفسي والفضفضة -->
+  <section id="psychological-support" class="section" style="background: #f9fafc;">
+    <h2 class="section-title">مساحة الدعم النفسي والفضفضة</h2>
+
+    <div class="feature-card">
+      <p>هنا يمكنك التعبير عن مشاعرك والحصول على دعم نفسي مناسب</p>
+
+      <div class="form-group">
+        <label for="feelings">كيف تشعر اليوم؟</label>
+        <textarea class="form-control" id="feelings" rows="4" placeholder="اكتب ما يدور في ذهنك..."></textarea>
+      </div>
+
+      <button type="button" class="btn-primary" onclick="provideSupport()">
+        <i class="fas fa-hands-helping"></i> احصل على الدعم
+      </button>
+
+      <div id="support-response" class="result-box" style="display: none; margin-top: 20px;">
+        <h3><i class="fas fa-heart"></i> رسالة الدعم</h3>
+        <p id="support-message"></p>
+      </div>
+
+      <div class="support-options">
+        <div class="support-option" onclick="showRelaxationExercises()">
+          <i class="fas fa-peace"></i>
+          <h4>تمارين استرخاء</h4>
+          <p>تمارين بسيطة للاسترخاء</p>
+        </div>
+
+        <div class="support-option" onclick="showBreathingExercises()">
+          <i class="fas fa-lungs"></i>
+          <h4>تمارين تنفس</h4>
+          <p>لتهدئة الأعصاب</p>
+        </div>
+
+        <div class="support-option" onclick="showMeditation()">
+          <i class="fas fa-spa"></i>
+          <h4>تأمل</h4>
+          <p>جلسات تأمل قصيرة</p>
+        </div>
+      </div>
+
+      <!-- تمارين التنفس -->
+      <div id="breathing-exercise" style="display:none; margin-top:20px;">
+        <h4>تمارين التنفس</h4>
+        <button id="start-breathing" class="btn-primary">ابدأ</button>
+        <div id="breathing-circle-container"
+          style="margin-top:20px; display:flex; justify-content:center; align-items:center;">
+          <div id="breathing-circle">استرخ</div>
+        </div>
+      </div>
+
+      <!-- تمارين الاسترخاء -->
+      <div id="relaxation-exercise" style="display:none; margin-top:20px;">
+        <h4>تمارين الاسترخاء</h4>
+        <div id="relaxation-content" style="background:#f1f1f1; padding:10px; border-radius:8px;">
+          <ul>
+            <li>اغمض عينيك وخذ نفساً عميقاً</li>
+            <li>مدد ذراعيك للأعلى ثم للاسترخاء</li>
+            <li>ركز على شعور جسمك كل دقيقة</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- التأمل -->
+      <div id="meditation-exercise" style="display:none; margin-top:20px;">
+        <h4>جلسات التأمل</h4>
+        <div style="background:#f1f1f1; padding:10px; border-radius:8px; text-align:right;">
+          <ul>
+            <li>اختر مكاناً هادئاً بعيداً عن الضوضاء والمشتتات.</li>
+            <li>اجلس بشكل مريح، على كرسي أو على وسادة على الأرض.</li>
+            <li>أغلق عينيك وخذ نفساً عميقاً لبضع ثوانٍ.</li>
+            <li>ركز على تنفسك وحاول تحرير ذهنك من الأفكار.</li>
+            <li>يمكنك البدء بجلسة قصيرة 5 دقائق وزيادة المدة تدريجياً.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- قسم حساب مؤشر كتلة الجسم -->
+  <section id="bmi-calculator" class="section">
+    <h2 class="section-title">حساب مؤشر كتلة الجسم (BMI)</h2>
+
+    <div class="feature-card">
+      <form id="bmi-form">
+        <div class="form-group">
+          <label for="height">الطول (سم)</label>
+          <input type="number" class="form-control" id="height" placeholder="ادخل طولك بالسنتيمتر">
+        </div>
+
+        <div class="form-group">
+          <label for="weight-bmi">الوزن (كجم)</label>
+          <input type="number" class="form-control" id="weight-bmi" placeholder="ادخل وزنك بالكيلوجرام">
+        </div>
+
+        <button type="button" class="btn-primary" onclick="calculateBMI()">
+          <i class="fas fa-calculator"></i> احسب مؤشر كتلة الجسم
+        </button>
+      </form>
+
+      <div id="bmi-result" class="result-box" style="display: none; margin-top: 20px;">
+        <h3><i class="fas fa-chart-line"></i> نتيجة حساب BMI</h3>
+        <p id="bmi-value"></p>
+        <p id="bmi-category"></p>
+        <p id="bmi-advice"></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- <header>
+      <div>
+        <div class="title">منبّه الدواء والعادات</div>
+        <div class="muted">
+          أضف تذكيراً يومياً أو أسبوعياً أو كل عدة ساعات.
+        </div>
+      </div>
+      <div class="actions">
+        <button id="askPerm" class="btn btn-ok">تفعيل الإشعارات</button>
+        <button id="exportBtn" class="btn">تصدير</button>
+        <button id="importBtn" class="btn">استيراد</button>
+        <button id="panicBtn" class="panic-btn">🚨 اتصال بالإسعاف</button>
+      </div>
+    </header> -->
+
+    <div class="grid">
+      <section class="card">
+        <h2>إضافة/تعديل تذكير</h2>
+        <form id="reminderForm">
+          <input type="hidden" id="remId" />
+          <label>العنوان*</label>
+          <input id="title" type="text" placeholder="مثال: دواء الضغط / شرب الماء" required />
+
+          <div class="row">
+            <div>
+              <label>النوع</label>
+              <select id="type">
+                <option value="med">دواء</option>
+                <option value="habit">عادة</option>
+              </select>
+            </div>
+            <div>
+              <label>الجرعة (اختياري للدواء)</label>
+              <input id="dose" type="text" placeholder="مثال: 1 قرص" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label>وقت التذكير*</label>
+              <input id="time" type="time" required />
+            </div>
+            <div>
+              <label>تاريخ البدء</label>
+              <input id="startDate" type="date" />
+            </div>
+          </div>
+
+          <label>التكرار*</label>
+          <select id="repeat" required>
+            <option value="daily">يومي</option>
+            <option value="weekly">أسبوعي (اختر الأيام)</option>
+            <option value="everyXh">كل X ساعات</option>
+          </select>
+
+          <div id="weeklyDays" class="days" hidden></div>
+
+          <div id="everyX" class="row" hidden>
+            <div>
+              <label>كل كم ساعة؟</label>
+              <input id="xHours" type="number" min="1" value="6" />
+            </div>
+            <div>
+              <label>عدد المرات يومياً (اختياري)</label>
+              <input id="perDay" type="number" min="1" placeholder="مثال: 3" />
+            </div>
+          </div>
+
+          <label>ملاحظات</label>
+          <textarea id="notes" placeholder="تفاصيل إضافية أو تعليمات الطبيب"></textarea>
+
+          <div class="row" style="margin-top: 8px">
+            <div class="muted">تشغيل صوت عند التذكير</div>
+            <label class="row" style="gap: 8px; align-items: center">
+              <input id="soundOn" type="checkbox" checked />
+              <span>مفعّل</span>
+            </label>
+          </div>
+
+          <div class="sep"></div>
+
+          <div class="row">
+            <button class="btn btn-brand" type="submit">حفظ التذكير</button>
+            <button class="btn" type="button" id="resetForm">
+              تفريغ الحقول
+            </button>
+          </div>
+
+          <div class="note">
+            يعمل التذكير طالما التبويب مفتوح. اسمح بالإشعارات للحصول على
+            تنبيهات نظامية.
+          </div>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>قائمة التذكيرات</h2>
+        <div id="list" class="list"></div>
+        <div id="empty" class="empty" hidden>
+          لا يوجد تذكيرات بعد. أضف أول تذكير من النموذج.
+        </div>
+      </section>
+    </div>
+
+    <section class="challenge card">
+      <h2>💡 تحدي نفسك</h2>
+      <p class="desc">
+        اختبر وعيك الصحي: جاوب على الأسئلة وشوف نتيجتك (20 سؤال)
+      </p>
+
+      <div id="quizBox">
+        <p id="question"></p>
+        <div class="options" id="options"></div>
+        <p id="feedback"></p>
+        <button id="nextBtn" hidden>➡️ التالي</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>⏱️ اختبار سرعة رد الفعل</h2>
+      <p class="lead">
+        اضغط "ابدأ" — انتظر التحويل للأخضر — اضغط بسرعة. اختصارات: Space
+      </p>
+
+      <div id="stage" class="stage idle" tabindex="0" role="button" aria-live="polite">
+        اضغط ابدأ للبدء
+      </div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn primary">ابدأ</button>
+        <button id="resetBtn" class="btn ghost">إعادة تعيين النتائج</button>
+        <label class="muted" style="margin-inline-start: auto">اختصارات: <b>Space</b></label>
+      </div>
+
+      <div class="stats" aria-live="polite">
+        <div class="stat">
+          أسرع: <b id="best">—</b><span class="muted"> ملّي ثانية</span>
+        </div>
+        <div class="stat">
+          متوسط: <b id="avg">—</b><span class="muted"> ملّي ثانية</span>
+        </div>
+        <div class="stat">
+          محاولات: <b id="count">0</b><span class="muted"> مرة</span>
+        </div>
+      </div>
+
+      <div class="list" id="history" aria-label="سجل النتائج">
+        <div class="muted">لا توجد نتائج بعد — ابدأ الاختبار.</div>
+      </div>
+    </section>
+  </div>
+
+  <audio id="ding" preload="auto">
+    <source src="alarm-2-375697.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- start tips -->
+  <div class="container">
+    <!-- <header>
+      <h1><i class="fas fa-heartbeat"></i> 50 نصيحة طبية وصحية</h1>
+      <p class="description">نصائح قيمة للحفاظ على صحتك ورفاهيتك في حياتك اليومية</p>
+    </header> -->
+
+    <div class="category-filter">
+      <button class="category-btn active" data-category="all">الكل</button>
+      <button class="category-btn" data-category="nutrition">التغذية</button>
+      <button class="category-btn" data-category="sports">الرياضة</button>
+      <button class="category-btn" data-category="mental">الصحة النفسية</button>
+      <button class="category-btn" data-category="prevention">الوقاية</button>
+      <button class="category-btn" data-category="sleep">النوم</button>
+    </div>
+
+    <div class="tips-container">
+      <h2 class="section-title">نصائح طبية وصحية</h2>
+
+      <div class="tips-grid">
+        <!-- النصائح -->
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">1</div>
+          <h3 class="tip-title"><i class="fas fa-apple-alt"></i> التغذية المتوازنة</h3>
+          <div class="tip-content">
+            <p>احرص على تناول نظام غذائي متوازن يحتوي على جميع المجموعات الغذائية: الفواكه، الخضروات، البروتينات،
+              النشويات المعقدة، والدهون الصحية.</p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="sports">
+          <div class="tip-number">2</div>
+          <h3 class="tip-title"><i class="fas fa-running"></i> النشاط البدني</h3>
+          <div class="tip-content">
+            <p>مارس الرياضة لمدة 30 دقيقة على الأقل يومياً لتحسين صحة القلب والجسم بشكل عام. يمكنك المشي، الركض، السباحة
+              أو أي نشاط بدني تستمتع به.</p>
+            <span class="category-tag">رياضة</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="sleep">
+          <div class="tip-number">3</div>
+          <h3 class="tip-title"><i class="fas fa-bed"></i> النوم الكافي</h3>
+          <div class="tip-content">
+            <p>احرص على النوم 7-8 ساعات يوميًا لتحسين صحتك الجسدية والعقلية. النوم الكافي يقوي الذاكرة ويحسن المزاج
+              ويعزز جهاز المناعة.</p>
+            <span class="category-tag">نوم</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">4</div>
+          <h3 class="tip-title"><i class="fas fa-tint"></i> شرب الماء</h3>
+          <div class="tip-content">
+            <p>اشرب 8 أكواب من الماء يوميًا على الأقل للحفاظ على ترطيب جسمك. الماء يساعد في الهضم، يحسن البشرة، وينظم
+              درجة حرارة الجسم.</p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="mental">
+          <div class="tip-number">5</div>
+          <h3 class="tip-title"><i class="fas fa-brain"></i> إدارة الإجهاد</h3>
+          <div class="tip-content">
+            <p>تعلم تقنيات إدارة الإجهاد مثل التأمل، تمارين التنفس، والتمارين الرياضية للحفاظ على صحتك العقلية. الإجهاد
+              المزمن يمكن أن يؤثر سلباً على صحتك الجسدية.</p>
+            <span class="category-tag">صحة نفسية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="prevention">
+          <div class="tip-number">6</div>
+          <h3 class="tip-title"><i class="fas fa-hand-holding-water"></i> غسل اليدين</h3>
+          <div class="tip-content">
+            <p>اغسل يديك بانتظام بالماء والصابون لمدة 20 ثانية على الأقل للوقاية من الأمراض المعدية. خاصة قبل الأكل وبعد
+              استخدام المرحاض.</p>
+            <span class="category-tag">وقاية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">7</div>
+          <h3 class="tip-title"><i class="fas fa-ban"></i> تقليل السكر</h3>
+          <div class="tip-content">
+            <p>قلل من استهلاك السكريات المضافة والمشروبات الغازية. الإفراط في السكر يرتبط بالسمنة، السكري، وأمراض القلب.
+            </p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">8</div>
+          <h3 class="tip-title"><i class="fas fa-seedling"></i> الخضروات والفواكه</h3>
+          <div class="tip-content">
+            <p>تناول 5 حصص على الأقل من الخضروات والفواكه يومياً. فهي غنية بالفيتامينات، المعادن، والألياف التي تحمي من
+              الأمراض المزمنة.</p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="prevention">
+          <div class="tip-number">9</div>
+          <h3 class="tip-title"><i class="fas fa-syringe"></i> التطعيمات</h3>
+          <div class="tip-content">
+            <p>احرص على أخذ التطعيمات اللازمة حسب عمرك وحالتك الصحية. التطعيمات تحميك من أمراض خطيرة وتحمي المجتمع من
+              انتشار الأمراض.</p>
+            <span class="category-tag">وقاية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="sports">
+          <div class="tip-number">10</div>
+          <h3 class="tip-title"><i class="fas fa-dumbbell"></i> تمارين القوة</h3>
+          <div class="tip-content">
+            <p>أدخل تمارين القوة في روتينك الأسبوعي. فهي تقوي العضلات، تحسن كثافة العظام، وتساعد في الحفاظ على وزن صحي.
+            </p>
+            <span class="category-tag">رياضة</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="mental">
+          <div class="tip-number">11</div>
+          <h3 class="tip-title"><i class="fas fa-users"></i> التواصل الاجتماعي</h3>
+          <div class="tip-content">
+            <p>حافظ على علاقات اجتماعية قوية. التواصل مع الآخرين يحسن الصحة النفسية ويقلل من خطر الاكتئاب والقلق.</p>
+            <span class="category-tag">صحة نفسية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="prevention">
+          <div class="tip-number">12</div>
+          <h3 class="tip-title"><i class="fas fa-smoking-ban"></i> الإقلاع عن التدخين</h3>
+          <div class="tip-content">
+            <p>إذا كنت مدخناً، توقف عن التدخين فوراً. التدخين يسبب أمراض الرئة، القلب، والسرطان، ويقصّر العمر بمعدل 10
+              سنوات في المتوسط.</p>
+            <span class="category-tag">وقاية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">13</div>
+          <h3 class="tip-title"><i class="fas fa-fish"></i> الأوميغا 3</h3>
+          <div class="tip-content">
+            <p>تناول الأطعمة الغنية بأحماض أوميغا 3 الدهنية مثل الأسماك الدهنية، الجوز، وبذور الكتان. الأوميغا 3 تحسن
+              صحة القلب والدماغ.</p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="sleep">
+          <div class="tip-number">14</div>
+          <h3 class="tip-title"><i class="fas fa-mobile-alt"></i> تقليل الشاشات قبل النوم</h3>
+          <div class="tip-content">
+            <p>توقف عن استخدام الأجهزة الإلكترونية قبل ساعة على الأقل من النوم. الضوء الأزرق من الشاشات يعطل إنتاج
+              الميلاتونين ويؤثر على جودة النوم.</p>
+            <span class="category-tag">نوم</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="mental">
+          <div class="tip-number">15</div>
+          <h3 class="tip-title"><i class="fas fa-book"></i> القراءة</h3>
+          <div class="tip-content">
+            <p>اقرأ بانتظام. القراءة تحفز العقل، تقلل التوتر، وتحسن الذاكرة والتركيز. حتى 15 دقيقة يومياً يمكن أن تحدث
+              فرقاً كبيراً.</p>
+            <span class="category-tag">صحة نفسية</span>
+          </div>
+        </div>
+
+        <!-- يمكن إضافة المزيد من النصائح هنا -->
+        <div class="tip-card" data-category="prevention">
+          <div class="tip-number">16</div>
+          <h3 class="tip-title"><i class="fas fa-sun"></i> الحماية من الشمس</h3>
+          <div class="tip-content">
+            <p>استخدم واقي الشمس عند الخروج في الشمس لحماية بشرتك من الأشعة فوق البنفسجية الضارة التي تسبب الشيخوخة
+              المبكرة وسرطان الجلد.</p>
+            <span class="category-tag">وقاية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="nutrition">
+          <div class="tip-number">17</div>
+          <h3 class="tip-title"><i class="fas fa-weight"></i> التحكم في الوزن</h3>
+          <div class="tip-content">
+            <p>حافظ على وزن صحي لتجنب الأمراض المرتبطة بالسمنة مثل السكري، أمراض القلب، والتهاب المفاصل. استشر أخصائي
+              التغذية لوضع خطة مناسبة.</p>
+            <span class="category-tag">تغذية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="sports">
+          <div class="tip-number">18</div>
+          <h3 class="tip-title"><i class="fas fa-walking"></i> المشي</h3>
+          <div class="tip-content">
+            <p>اجعل المشي جزءاً من روتينك اليومي. حتى المشي لمدة 30 دقيقة يومياً يمكن أن يحسن صحتك البدنية والعقلية بشكل
+              ملحوظ.</p>
+            <span class="category-tag">رياضة</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="mental">
+          <div class="tip-number">19</div>
+          <h3 class="tip-title"><i class="fas fa-meditation"></i> التأمل</h3>
+          <div class="tip-content">
+            <p>جرب ممارسة التأمل لبضع دقائق يومياً. التأمل يقلل التوتر، يحسن التركيز، ويزيد من الوعي الذاتي والسلام
+              الداخلي.</p>
+            <span class="category-tag">صحة نفسية</span>
+          </div>
+        </div>
+
+        <div class="tip-card" data-category="prevention">
+          <div class="tip-number">20</div>
+          <h3 class="tip-title"><i class="fas fa-pills"></i> الفحوصات الدورية</h3>
+          <div class="tip-content">
+            <p>قم بإجراء فحوصات طبية دورية للكشف المبكر عن الأمراض. الوقاية خير من العلاج والكشف المبكر ينقذ الأرواح.
+            </p>
+            <span class="category-tag">وقاية</span>
+          </div>
+        </div>
+
+        <!-- يمكن إضافة 30 نصيحة إضافية هنا -->
+
+      </div>
+    </div>
+  </div>
+  <!-- end tips -->
+  <!-- start الاسال -->
+  <div class="container">
+    <!-- <header>
+      <h1><i class="fas fa-stethoscope"></i> 50 سؤال طبي شائع</h1>
+      <p class="description">إجابات واضحة ومفصلة على الأسئلة الطبية الأكثر شيوعاً في مختلف التخصصات</p>
+    </header> -->
+
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input type="text" id="searchInput" placeholder="ابحث عن سؤال أو موضوع طبي...">
+    </div>
+
+    <div class="category-filter">
+      <button class="category-btn active" data-category="all">الكل</button>
+      <button class="category-btn" data-category="general">العامة</button>
+      <button class="category-btn" data-category="heart">القلب</button>
+      <button class="category-btn" data-category="digestive">الهضم</button>
+      <button class="category-btn" data-category="bones">العظام</button>
+      <button class="category-btn" data-category="skin">الجلد</button>
+      <button class="category-btn" data-category="children">أطفال</button>
+      <button class="category-btn" data-category="women">نساء</button>
+    </div>
+
+    <div class="faq-container">
+      <h2 class="section-title">أسئلة طبية شائعة</h2>
+
+      <div class="faq-grid">
+        <!-- الأسئلة العامة -->
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض مرض السكري؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>تشمل الأعراض الشائعة لمرض السكري:</p>
+            <ul>
+              <li>العطش الشديد والجفاف</li>
+              <li>الجوع المستمر</li>
+              <li>التبول المتكرر</li>
+              <li>فقدان الوزن غير المبرر</li>
+              <li>التعب والإرهاق</li>
+              <li>عدم وضوح الرؤية</li>
+              <li>بطء التئام الجروح</li>
+            </ul>
+            <span class="category-tag">عام</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>كيف يمكن خفض ضغط الدم المرتفع؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>يمكن خفض ضغط الدم عن طريق:</p>
+            <ol>
+              <li>تقليل تناول الملح والصوديوم</li>
+              <li>ممارسة الرياضة بانتظام (30 دقيقة يومياً)</li>
+              <li>الحفاظ على وزن صحي</li>
+              <li>تقليل التوتر والقلق</li>
+              <li>الإقلاع عن التدخين</li>
+              <li>تناول الأدوية الموصوفة من الطبيب بانتظام</li>
+              <li>تناول غذاء صحي غني بالخضروات والفواكه</li>
+            </ol>
+            <span class="category-tag">عام</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض الإنفلونزا؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>أعراض الإنفلونزا تشمل:</p>
+            <ul>
+              <li>الحمى وارتفاع درجة الحرارة</li>
+              <li>السعال الجاف</li>
+              <li>التهاب الحلق</li>
+              <li>سيلان أو انسداد الأنف</li>
+              <li>آلام العضلات والمفاصل</li>
+              <li>الصداع</li>
+              <li>القشعريرة والتعرق</li>
+              <li>التعب والإرهاق العام</li>
+            </ul>
+            <p>تختلف الإنفلونزا عن نزلات البرد بكونها أكثر حدة وبداية مفاجئة للأعراض.</p>
+            <span class="category-tag">عام</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>كيف يمكن تقوية جهاز المناعة؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>لتقوية جهاز المناعة:</p>
+            <ul>
+              <li>النوم الكافي (7-8 ساعات ليلاً)</li>
+              <li>التغذية الصحية الغنية بالفواكه والخضروات</li>
+              <li>ممارسة الرياضة بانتظام</li>
+              <li>تقليل التوتر والضغط النفسي</li>
+              <li>غسل اليدين بانتظام</li>
+              <li>تجنب التدخين والكحول</li>
+              <li>الحفاظ على وزن صحي</li>
+              <li>التعرض المعتدل لأشعة الشمس للحصول على فيتامين د</li>
+            </ul>
+            <span class="category-tag">عام</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="general">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>كم مرة يجب فحص ضغط الدم؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>يجب على البالغين فحص ضغط الدم مرة واحدة على الأقل سنوياً. إذا كان لديك ارتفاع في ضغط الدم أو عوامل خطر،
+              قد يحتاج الأمر لفحص أكثر تكراراً حسب إرشادات الطبيب.</p>
+            <p>الأشخاص الذين يعانون من ارتفاع ضغط الدم قد يحتاجون لفحص ضغط الدم:</p>
+            <ul>
+              <li>مرة واحدة على الأقل شهرياً إذا كان مضبوطاً</li>
+              <li>أسبوعياً أو يومياً إذا كان غير مستقر</li>
+              <li>قبل وبعد تغيير الأدوية</li>
+            </ul>
+            <span class="category-tag">عام</span>
+          </div>
+        </div>
+
+        <!-- أسئلة القلب -->
+        <div class="faq-item" data-category="heart">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض النوبة القلبية؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>أعراض النوبة القلبية تشمل:</p>
+            <ul>
+              <li>ألم أو ضغط في الصدر قد ينتشر إلى الذراعين، الرقبة، الفك أو الظهر</li>
+              <li>ضيق التنفس</li>
+              <li>التعرق البارد</li>
+              <li>الغثيان أو القيء</li>
+              <li>الدوخة أو الإغماء</li>
+              <li>التعب غير المعتاد</li>
+            </ul>
+            <p>تختلف الأعراض بين الرجال والنساء، حيث قد تعاني النساء من ألم في الظهر أو الفك أو غثيان بدون ألم صدر واضح.
+            </p>
+            <span class="category-tag">قلب</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="heart">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هو الكوليسترول وما أنواعه؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>الكوليسترول هو مادة شمعية موجودة في الدم يحتاجها الجسم لبناء الخلايا الصحية، ولكن ارتفاعها يزيد خطر أمراض
+              القلب.</p>
+            <p>أنواع الكوليسترول:</p>
+            <ul>
+              <li>الكوليسترول الضار (LDL): يترسب في جدران الشرايين مسبباً تضيقها</li>
+              <li>الكوليسترول النافع (HDL): يساعد على إزالة الكوليسترول الضار من الشرايين</li>
+              <li>الدهون الثلاثية: نوع من الدهون في الدم تزيد خطر الأمراض عند ارتفاعها</li>
+            </ul>
+            <span class="category-tag">قلب</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="heart">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي عوامل خطر أمراض القلب؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>عوامل خطر أمراض القلب تشمل:</p>
+            <ul>
+              <li>التدخين</li>
+              <li>ارتفاع ضغط الدم</li>
+              <li>ارتفاع الكوليسترول</li>
+              <li>مرض السكري</li>
+              <li>السمنة وزيادة الوزن</li>
+              <li>قلة النشاط البدني</li>
+              <li>التوتر المزمن</li>
+              <li>التاريخ العائلي لأمراض القلب</li>
+              <li>العمر (الرجال فوق 45 والنساء فوق 55)</li>
+            </ul>
+            <span class="category-tag">قلب</span>
+          </div>
+        </div>
+
+        <!-- أسئلة الجهاز الهضمي -->
+        <div class="faq-item" data-category="digestive">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أسباب حرقة المعدة؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>تحدث حرقة المعدة بسبب ارتداد حمض المعدة إلى المريء. الأسباب تشمل:</p>
+            <ul>
+              <li>الأطعمة الحارة أو الدسمة أو المقلية</li>
+              <li>الإفراط في الأكل أو الأكل قبل النوم مباشرة</li>
+              <li>التدخين</li>
+              <li>شرب الكحول</li>
+              <li>المشروبات الغازية والكافيين</li>
+              <li>الحمل</li>
+              <li>السمنة وزيادة الوزن</li>
+              <li>بعض الأدوية مثل الأسبرين</li>
+              <li>الفتق الحجابي</li>
+            </ul>
+            <span class="category-tag">هضم</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="digestive">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي متلازمة القولون العصبي؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>متلازمة القولون العصبي هي اضطراب شائع يؤثر على الأمعاء الغليظة. الأعراض تشمل:</p>
+            <ul>
+              <li>تشنجات وآلام في البطن</li>
+              <li>الانتفاخ والغازات</li>
+              <li>الإسهال أو الإمساك أو كليهما بالتناوب</li>
+              <li>وجود مخاط في البراز</li>
+            </ul>
+            <p>لا تسبب متلازمة القولون العصبي تغيرات في أنسجة الأمعاء ولا تزيد خطر الإصابة بسرطان القولون.</p>
+            <span class="category-tag">هضم</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="digestive">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض قرحة المعدة؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>أعراض قرحة المعدة تشمل:</p>
+            <ul>
+              <li>ألم حارق أو موجع في المعدة</li>
+              <li>الشعور بالامتلاء أو الانتفاخ</li>
+              <li>التجشؤ</li>
+              <li>الغثيان</li>
+              <li>القئ أحياناً</li>
+              <li>فقدان الشهية</li>
+              <li>فقدان الوزن غير المبرر</li>
+            </ul>
+            <p>قد يزداد الألم عندما تكون المعدة فارغة أو في الليل، وقد يخف مؤقتاً بعد الأكل أو تناول مضادات الحموضة.</p>
+            <span class="category-tag">هضم</span>
+          </div>
+        </div>
+
+        <!-- أسئلة العظام -->
+        <div class="faq-item" data-category="bones">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>كيف يمكن الوقاية من هشاشة العظام؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>الوقاية من هشاشة العظام تشمل:</p>
+            <ul>
+              <li>تناول كمية كافية من الكالسيوم (1000-1200 مجم يومياً)</li>
+              <li>الحصول على فيتامين د الكافي من الشمس أو المكملات</li>
+              <li>ممارسة تمارين تحمل الوزن بانتظام</li>
+              <li>تمارين تقوية العضلات</li>
+              <li>تجنب التدخين</li>
+              <li>الحد من تناول الكحول</li>
+              <li>الحفاظ على وزن صحي</li>
+              <li>إجراء فحص كثافة العظام عند اللزوم خاصة بعد سن اليأس</li>
+            </ul>
+            <span class="category-tag">عظام</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="bones">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هو علاج آلام الظهر؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>علاج آلام الظهر يعتمد على السبب والشدة، ويشمل:</p>
+            <ul>
+              <li>الراحة لفترة محدودة</li>
+              <li>مسكنات الألم مثل الباراسيتامول أو مضادات الالتهاب</li>
+              <li>العلاج الطبيعي وتمارين التقوية</li>
+              <li>الكمادات الباردة أو الساخنة</li>
+              <li>العلاج بالتدليك</li>
+              <li>حقن الستيرويد في الحالات الشديدة</li>
+              <li>الجراحة في الحالات النادرة والمستعصية</li>
+            </ul>
+            <p>الوقاية خير من العلاج عن طريق الحفاظ على وضعية جيدة وتقوية عضلات الظهر والبطن.</p>
+            <span class="category-tag">عظام</span>
+          </div>
+        </div>
+
+        <!-- أسئلة الجلد -->
+        <div class="faq-item" data-category="skin">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أسباب حب الشباب؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>حب الشباب ينتج عن انسداد مسام الجلد بالزيوت وخلايا الجلد الميتة. العوامل المساهمة تشمل:</p>
+            <ul>
+              <li>التغيرات الهرمونية خلال البلوغ أو الدورة الشهرية</li>
+              <li>بعض الأدوية مثل الكورتيكوستيرويدات</li>
+              <li>النظام الغذائي (بعض الدراسات تربط بين منتجات الألبان والأطعمة الغنية بالكربوهيدرات)</li>
+              <li>الإجهاد والتوتر</li>
+              <li>العوامل الوراثية</li>
+              <li>استخدام منتجات العناية بالبشرة الدهنية أو المسببة للانسداد</li>
+              <li>الضغط على البشرة (مثل وضع الذقن على اليد أو ارتداء خوذة ضيقة)</li>
+            </ul>
+            <span class="category-tag">جلد</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="skin">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هو علاج حروق الشمس؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>علاج حروق الشمس يشمل:</p>
+            <ul>
+              <li>الكمادات الباردة على المنطقة المصابة</li>
+              <li>مرطبات الجلد مثل الألوفيرا أو كريمات الترطيب الخالية من العطور</li>
+              <li>مسكنات الألم مثل الإيبوبروفين أو الأسبرين</li>
+              <li>شرب الكثير من الماء للترطيب</li>
+              <li>تجنب التعرض للشمس حتى الشفاء التام</li>
+              <li>عدم فقء البثور التي قد تظهر للحفاظ على الجلد وحمايته من العدوى</li>
+              <li>ارتداء ملابس فضفاضة وقطنية لتجنب الاحتكاك</li>
+            </ul>
+            <p>في الحالات الشديدة مع ظهور فقاعات كبيرة أو حمى، يجب استشارة الطبيب.</p>
+            <span class="category-tag">جلد</span>
+          </div>
+        </div>
+
+        <!-- المزيد من الأسئلة سيضاف هنا -->
+        <div class="faq-item" data-category="children">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض التسنين عند الرضع؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>أعراض التسنين تشمل:</p>
+            <ul>
+              <li>سيلان اللعاب بكثرة</li>
+              <li>العض على الأشياء</li>
+              <li>التهيج والبكاء</li>
+              <li>تورم اللثة</li>
+              <li>رفض الطعام</li>
+              <li>اضطرابات النوم</li>
+            </ul>
+            <p>عادة لا يسبب التسنين حمى شديدة أو إسهال، وفي هذه الحالات يجب استشارة الطبيب.</p>
+            <span class="category-tag">أطفال</span>
+          </div>
+        </div>
+
+        <div class="faq-item" data-category="women">
+          <div class="faq-question" onclick="toggleAnswer(this)">
+            <span>ما هي أعراض انقطاع الطمث؟</span>
+            <span class="arrow">▼</span>
+          </div>
+          <div class="faq-answer">
+            <p>أعراض انقطاع الطمث تشمل:</p>
+            <ul>
+              <li>الهبات الساخنة</li>
+              <li>التعرق الليلي</li>
+              <li>جفاف المهبل</li>
+              <li>اضطرابات النوم</li>
+              <li>تقلبات المزاج</li>
+              <li>زيادة الوزن وبطء metabolism</li>
+              <li>جفاف البشرة</li>
+              <li>ترقق الشعر</li>
+              <li>فقدان كثافة العظام</li>
+            </ul>
+            <p>تختلف شدة هذه الأعراض من امرأة لأخرى.</p>
+            <span class="category-tag">نساء</span>
+          </div>
+        </div>
+
+        <!-- يمكن إضافة المزيد من الأسئلة هنا -->
+
+      </div>
+    </div>
+  </div>
+  <!-- end الاساله -->
+   
+  <div class="container" id="12">
+    <h1>مقياس نبض القلب بالكاميرا</h1>
+    <p class="description">يقيس هذا التطبيق معدل نبض قلبك باستخدام كاميرا الويب من خلال تحليل التغيرات الدقيقة في لون
+      بشرتك</p>
+
+    <div class="instructions">
+      <h3>تعليمات الاستخدام:</h3>
+      <ol>
+        <li>اضغط على زر "بدء القياس"</li>
+        <li>اسمح للتطبيق باستخدام الكاميرا</li>
+        <li>ضع وجهك أمام الكاميرا بحيث يكون واضحًا ومضاء جيدًا</li>
+        <li>حاول البقاء ثابتًا أثناء القياس لمدة 30 ثانية</li>
+        <li>اقرأ النتائج بعد اكتمال القياس</li>
+      </ol>
+    </div>
+
+    <div class="video-container">
+      <video id="video" autoplay playsinline></video>
+      <div class="face-overlay"></div>
+    </div>
+
+    <div class="controls">
+      <button id="start">بدء القياس</button>
+      <button id="stop" disabled>إيقاف</button>
+    </div>
+
+    <div class="results">
+      <div class="result-box">
+        <div class="label">معدل النبض الحالي</div>
+        <div class="value" id="heartRate">--</div>
+        <div class="label">نبضة في الدقيقة</div>
+      </div>
+
+      <div class="result-box">
+        <div class="label">مستوى الثقة</div>
+        <div class="value" id="confidence">--</div>
+        <div class="label">من 100%</div>
+      </div>
+
+      <div class="result-box">
+        <div class="label">مدة القياس</div>
+        <div class="value" id="timer">0</div>
+        <div class="label">ثانية</div>
+      </div>
+    </div>
+
+    <div class="chart-container">
+      <canvas id="chart"></canvas>
+    </div>
+
+
+  <script>
+    async function checkSymptoms() {
+      const symptoms = document.getElementById('symptoms').value;
+      const duration = document.getElementById('duration').value;
+      const severity = document.getElementById('severity').value;
+
+      if (!symptoms || !duration || !severity) {
+        alert('يرجى ملء جميع الحقول المطلوبة');
+        return;
+      }
+
+      const prompt = `أنت مساعد طبي. شخص عنده الأعراض: "${symptoms}". المدة: "${duration}", الشدة: "${severity}". اعطِ تشخيصًا مبدئيًا ونصيحة دوائية عامة بشكل مبسط.`;
+
+      try {
+        const resp = await fetch('http://localhost:3000/ask', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt })
+        });
+
+        const data = await resp.json();
+        console.log('Proxy response:', data);
+
+        let resultText = '';
+
+        if (data.error) {
+          resultText = '⚠️ خطأ: ' + (data.error.message || JSON.stringify(data.error));
+        } else if (data.choices && data.choices.length) {
+          // هنا بنعمل تنظيف للنص عشان لو فيه خربطة أو كلمات مش مفهومة
+          resultText = data.choices[0].message.content
+            .replace(/[\u0000-\u001F\u007F-\u009F]/g, '') // إزالة الحروف غير المرئية
+            .trim();
+        } else {
+          resultText = 'لم يتم الحصول على نتيجة واضحة.';
+        }
+
+        document.getElementById('diagnosis-text').textContent = resultText;
+        document.getElementById('symptoms-result').style.display = 'block';
+      } catch (err) {
+        console.error(err);
+        alert('حدث خطأ أثناء الاتصال بالخادم المحلي.');
+      }
+    }
+    // ===============
+    const OPENROUTER_API_KEY = "sk-or-v1-9ceda48aa670e21a097e8d0e1630ad5a219b32a0";
+
+    async function provideSupport() {
+      const feelings = document.getElementById('feelings').value;
+
+      if (!feelings) {
+        alert('يرجى مشاركة مشاعرك أولاً');
+        return;
+      }
+
+      const prompt = `أنت مساعد نفسي وداعم عاطفي. المستخدم كتب التالي: "${feelings}". 
+  أجب بطريقة داعمة ومطمئنة، أعط نصائح عملية قصيرة، وركز على الجانب النفسي.`;
+
+      try {
+        const resp = await fetch('http://localhost:3000/ask', { // سيرفر البروكسي
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ prompt })
+        });
+
+        const data = await resp.json();
+        console.log('Proxy response:', data);
+
+        let supportMessage = '';
+        if (data.error) {
+          supportMessage = '⚠️ حدث خطأ: ' + (data.error.message || JSON.stringify(data.error));
+        } else if (data.choices && data.choices.length) {
+          supportMessage = data.choices[0].message.content;
+        } else {
+          supportMessage = JSON.stringify(data);
+        }
+
+        document.getElementById('support-message').textContent = supportMessage;
+        document.getElementById('support-response').style.display = 'block';
+      } catch (err) {
+        console.error(err);
+        alert('حدث خطأ أثناء الاتصال بالخادم المحلي.');
+      }
+    }
+
+  </script>
+
+
+
+  <!-- jQuery library -->
+  <script src="jquery-3.7.1.min.js"></script>
+  <!-- Bootstrap JS framework -->
+  <script src="bootstrap.js"></script>
+  <!-- Popper.js for Bootstrap tooltips and popovers -->
+  <script src="min.js"></script>
+  <!-- Main custom JS file -->
+  <script src="script.js"></script>
+</body>
+
+</html>
